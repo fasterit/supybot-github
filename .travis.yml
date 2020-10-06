@@ -3,6 +3,12 @@ python:
   - "3.7"
   - "3.8"
 
+os:
+  - linux
+
+dist:
+  - focal
+
 install:
   - mkdir void
   - mkdir void/Github
@@ -22,6 +28,4 @@ after_success:
 
 notifications:
   webhooks:
-    - http://helit.org:8093/++alezakos
-
-sudo: false
+#    - http://helit.org:8093/++alezakos
